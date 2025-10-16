@@ -23,7 +23,8 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://127.0.0.1:8000/:path*', // 👈 your FastAPI backend
+        destination: 'https://mynapi.onrender.com/:path*',
+        // destination: 'http://127.0.0.1:8000/:path*', 
       },
     ];
   },
