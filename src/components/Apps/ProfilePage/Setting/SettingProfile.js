@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+
 import {
   Card,
   CardHeader,
@@ -55,7 +56,7 @@ function SettingProfile() {
 
     console.log("Using token:", token);
 
-    const res = await fetch("http://127.0.0.1:8000/profile/update", {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/profile/update`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
